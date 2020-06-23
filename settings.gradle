@@ -1,0 +1,5 @@
+rootProject.name = 'AudioPlayer'
+include ':app', ":audioplayer", ':audioplayer_media'
+
+//include ':audiorecorder'
+//project(':audiorecorder').projectDir = new File(settingsDir,'../AudioRecorder/audiorecorder')
