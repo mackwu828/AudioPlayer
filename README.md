@@ -1,0 +1,8 @@
+
+
+MediaPlayer可以播放多种格式的声音文件，例如MP3，AAC，WAV，OGG，MIDI等。  
+MediaPlayer会在framework层创建对应的音频解码器。  
+
+MediaPlayer在framework层还是会创建AudioTrack，把解码后的PCM数流传递给AudioTrack，AudioTrack再传递给AudioFlinger进行混音，然后才传递给硬件播放，所以是MediaPlayer包含了AudioTRack。
+
+比较常见使用AudioTrack，CPU占用率低，内存消耗也比较少。因此如果是播放比较短时间的WAV音频文件，还是比较建议使用AudioTrack。如果扩展性比较高，当然就是推荐MediaPlayer。

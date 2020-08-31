@@ -1,5 +1,5 @@
-rootProject.name = 'XAudioPlayer'
-include ':app', ':xaudioplayer', ':xaudioplayer_media'
+rootProject.name = 'AudioPlayer'
+include ':app', ':audioplayer'
 
 //include ':audiorecorder'
 //project(':audiorecorder').projectDir = new File(settingsDir,'../AudioRecorder/audiorecorder')
